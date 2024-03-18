@@ -1,0 +1,110 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.Form {
+  width: 30%;
+  margin: 10px auto;
+}
+
+.Input {
+  padding: 7px 3px;
+}
+
+.AddTask {
+  margin-left: 10px;
+  color: white;
+  background-color: black;
+  padding: 8px;
+  border: none;
+  border-radius: 3px;
+}
+
+hr {
+  width: 50%;
+}
+
+.Todos {
+  list-style-type: none;
+  padding: 0;
+  width: 30%;
+  margin: auto;
+}
+
+.Task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+  border-bottom: 1px solid #ccc;
+}
+
+.TaskButtons {
+  display: flex;
+  gap: 5px;
+}
+
+.MarkDone, .Delete {
+  padding: 4px 8px;
+  cursor: pointer;
+  border: none;
+}
+
+.MarkDone {
+  background-color: #4caf50;
+  color: white;
+}
+
+.Delete {
+  background-color: #f44336;
+  color: white;
+}
+
+@media (min-width: 250px) and (max-width: 500px) {
+  .Form, hr, .Todos {
+      width: 100%;
+      margin: 2px;
+  }
+
+  .Input {
+      padding: 3px 2px;
+  }
+
+  .AddTask {
+      margin-left: 5px;
+      padding: 4px;
+      margin: 2px;
+  }
+
+  .Task {
+      padding: 2px 16px;
+  }
+
+  .MarkDone, .Delete {
+      padding: 2px 4px;
+  }
+
+}
+
+@media (min-width: 500px) and (max-width: 800px) {
+  .Form {
+      width: 100%;
+  }
+
+  hr {
+      width: 60%;
+  }
+
+  .Todos {
+      width: 50%;
+  }
+}
+
+@media (min-width: 800px) {
+  .Form {
+      width: 100%;
+  }
+}
